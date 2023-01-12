@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "821B82DD-33DD-4C98-88B8-CF8837B113A0_8_2-1.csv",
 				"folderPath": "CTASExport/results",
 				"fileSystem": "paakossynapsesystemfile"
 			}
