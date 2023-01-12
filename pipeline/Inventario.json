@@ -19,9 +19,7 @@
 						"referenceName": "Binary1",
 						"type": "DatasetReference"
 					},
-					"fieldList": [
-						"exists"
-					],
+					"fieldList": [],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
 						"enablePartitionDiscovery": false
