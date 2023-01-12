@@ -1,0 +1,9 @@
+{
+	"name": "paakosdatafactorydemos",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5473ffae-5774-4529-bdf9-af2878ac3b92",
+		"tenantId": "16b3c013-d300-468d-ac64-7eda0820b6d3"
+	}
+}
