@@ -21,8 +21,8 @@
 					},
 					"fieldList": [
 						"itemName",
-						"size",
-						"lastModified"
+						"lastModified",
+						"size"
 					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
@@ -32,8 +32,39 @@
 						"type": "BinaryReadSettings"
 					}
 				}
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "Get Metadata1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "name",
+					"value": {
+						"value": "@activity('Get Metadata1').output.itemName",
+						"type": "Expression"
+					}
+				}
 			}
 		],
+		"variables": {
+			"name": {
+				"type": "String"
+			},
+			"size": {
+				"type": "String"
+			},
+			"lastmodified": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }
